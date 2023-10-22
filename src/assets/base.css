@@ -5,3 +5,12 @@ body ,html ,#app {
   min-height: 100vh;
   width: 100%;
 }
+
+a{
+  text-decoration: none !important;
+  color: #080507;
+  transition: all 0.3s;
+}
+a:hover{
+  color: #E0338A ;
+}

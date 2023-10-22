@@ -1,6 +1,6 @@
 <template >
   
-        <b-nav-item class="text-black" :to="link" :active="active">{{ title }} </b-nav-item>
+        <b-nav-item :class="className" class="text-black" :to="link" :active="active">{{ title }} </b-nav-item>
     
 </template>
 <script lang="ts">
@@ -23,10 +23,15 @@ export default defineComponent({
             type: String,
             default: 'black'
         },
+
         title: {
             type: String,
             default: 'Link'
         },
+        className:{
+            type: String,
+            default: ''
+        }
     },
 
 })
@@ -34,5 +39,9 @@ export default defineComponent({
 <style >
     .link{
         text-decoration: none !important;
+    }
+
+    .no-space > a{
+            padding: 0;
     }
 </style>

@@ -1,17 +1,21 @@
 <template >
     <div>
-        <HeaderComponent />
+        <HeaderComponent :links="links" :extra-links="extraLinks" />
+        <RouterView/>
     </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 import HeaderComponent from '../HeaderComponent.vue';
+import { clientLinks } from '@/utils/links';
 export default defineComponent({
     name: 'ClientLayout',
     components: { HeaderComponent },
     data() {
         return {
-            show: false
+            show: false,
+            links: clientLinks.links,
+            extraLinks: clientLinks.extraLinks
         };
     },
     methods: {

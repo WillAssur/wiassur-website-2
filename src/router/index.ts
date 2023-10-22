@@ -9,7 +9,7 @@ const router = createRouter({
       component: () => import('@/components/Layout/ClientLayout/ClientLayout.vue'),
       children: [
         {
-          path: 'home',
+          path: '',
           name: 'client-home-page',
           component: () => import('@/views/ClientsPages/HomePageClient.vue')
         }
@@ -21,7 +21,7 @@ const router = createRouter({
       component: () => import('@/components/Layout/PartnerLayout/PartnerLayout.vue'),
       children: [
         {
-          path: 'home',
+          path: '',
           name: 'partner-home-page',
           component: () => import('@/views/PartnerPages/HomePagePartner.vue')
         }
