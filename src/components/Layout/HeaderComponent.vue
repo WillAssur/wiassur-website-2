@@ -1,7 +1,7 @@
 <template>
     <div ref="header" class="position-fixed w-100 left-0 right-0" style="top: 60px;">
         <div class="container ">
-            <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow mx-2 p-3">
+            <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow  p-3">
                 <div class="d-flex align-items-center">
                     <LogoComponent />
                     <b-badge variant="warning " class="px-3 py-2 text-dark rounded-5 ms-3">
@@ -68,9 +68,6 @@ export default {
     methods: {
         handleScroll() {
             const scrollingDiv: any = this.$refs.header;
-
-            console.log(window.scrollY, 'inin');
-
             if (60 - window.scrollY > 15) {
                 scrollingDiv.style.top = `${60 - window.scrollY}px`;
             }

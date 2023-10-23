@@ -14,3 +14,21 @@ a{
 a:hover{
   color: #E0338A ;
 }
+
+.page{
+  padding-top: 200px;
+  height: 100%;
+  padding-bottom:40px ;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src:
+    local("Trickster"),
+    url("/fonts/Avenir.ttc") format("opentype"),
+    
+}
+
+*{
+  font-family: Avenir;
+}

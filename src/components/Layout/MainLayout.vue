@@ -21,7 +21,7 @@
 
 
 
-        <div class="min-h-100vh">
+        <div class="min-h-100vh ">
             <RouterView />
         </div>
 
@@ -67,6 +67,5 @@ export default defineComponent({
 <style >
 .min-h-100vh {
     min-height: 100vh;
-    background-color: bisque;
 }
 </style>
