@@ -1,5 +1,5 @@
 <template >
-    <div class="page  ">
+    <div class="page">
         <div class="container">
             <b-row>
                 <b-col cols="4" class="d-flex align-items-start flex-column justify-content-center">
@@ -16,7 +16,7 @@
                     </b-button>
                 </b-col>
                 <b-col>
-                    <img class="w-100" src="/images/frame-1.svg" alt="">
+                    <img class="w-100" src="/images/hero-1.svg" alt="">
                 </b-col>
             </b-row>
         </div>
@@ -47,13 +47,13 @@
                     </b-col>
 
                     <b-col>
-                        <img src="/images/frame-2.svg" alt="">
+                        <img src="/images/empty.png" alt="">
                     </b-col>
                 </b-row>
 
                 <b-row class="mt-5">
                     <b-col>
-                        <img src="/images/frame-2.svg" alt="">
+                        <img src="/images/empty.png" alt="">
                     </b-col>
 
                     <b-col cols="1">
@@ -105,7 +105,7 @@
                     </b-col>
 
                     <b-col>
-                        <img src="/images/frame-2.svg" alt="">
+                        <img src="/images/empty.png" alt="">
                     </b-col>
                 </b-row>
             </b-container>
@@ -144,7 +144,8 @@
                             <span>Vous pouvez poser toutes vos questions, sur tous nos canaux.</span>
                         </div>
 
-                        <img class="position-absolute right-0" style="right:0; top: -150px; bottom: 0; " src="/images/wibot.png" alt="">
+                        <img class="position-absolute right-0" style="right:0; top: -140px; bottom: 0; "
+                            src="/images/wibot.svg" alt="">
                     </div>
                 </div>
 
@@ -173,6 +174,8 @@ export default defineComponent({
 <style scoped >
 .page {
     background: #F6EEF3;
+
+    padding-bottom: 40px;
 
 }
 

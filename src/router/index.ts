@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -12,10 +14,16 @@ const router = createRouter({
           path: '',
           name: 'client-home-page',
           component: () => import('@/views/ClientsPages/HomePageClient.vue')
+        }, {
+          path: '/declarer-un-sinistre',
+          name: 'declare-sinistre',
+          component: () => import('@/views/ClientsPages/DeclarerUnSinistreView.vue')
         }
       ]
     },
+
     {
+
       path: '/partner',
       name: 'partner-pages',
       component: () => import('@/components/Layout/PartnerLayout/PartnerLayout.vue'),
@@ -27,6 +35,7 @@ const router = createRouter({
         }
       ]
     }
+    // ... Autres routes
   ]
 
 })
