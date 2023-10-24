@@ -15,9 +15,11 @@
         </b-row>
       </b-container>
   
-      <b-container fluid class="mt-5">
-        <h1 class="text-center mb-5">Nos produits pour les entreprises</h1>
-        <b-row class="d-flex justify-content-center">
+      <div style="height: 50px;"></div>
+  
+      <b-container>
+        <h2 class="text-center fw-bold mb-5">Nos produits pour les entreprises</h2>
+        <b-row>
           <b-col cols="12" md="6" lg="4" v-for="(product, index) in products" :key="index">
             <b-card class="mb-4" style="height: 317px; background: white; box-shadow: 0px 12px 42px rgba(7, 65, 5, 0.10); border-radius: 16px;">
               <div class="circle d-flex align-items-center justify-content-center"></div>
@@ -29,6 +31,8 @@
           </b-col>
         </b-row>
       </b-container>
+  
+      <div style="height: 100px;"></div>
     </div>
   </template>
   
@@ -40,7 +44,6 @@
     data() {
       return {
         items: [
-            
           // ... (votre liste d'articles pour les particuliers)
           {
             title: 'Automobile',
@@ -85,7 +88,7 @@
   
   <style scoped>
   .page {
-    height: 777px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
