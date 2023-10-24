@@ -18,6 +18,11 @@ const router = createRouter({
           path: '/declarer-un-sinistre',
           name: 'declare-sinistre',
           component: () => import('@/views/ClientsPages/DeclarerUnSinistreView.vue')
+        },
+        {
+          path: '/about',
+          name: 'about',
+          component: () => import('@/views/ClientsPages/AboutView.vue')
         }
       ]
     },

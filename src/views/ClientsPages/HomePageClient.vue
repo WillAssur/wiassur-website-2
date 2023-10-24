@@ -140,8 +140,8 @@
                             <h3 class="fs-1">
                                 Besoin d’aide ? On est là
                             </h3>
-                            <span>Parlez à un conseiller</span>
-                            <span>Vous pouvez poser toutes vos questions, sur tous nos canaux.</span>
+                            <span class="fw-bold">Parlez à un conseiller</span>
+                            <span class="fw-bold">Vous pouvez poser toutes vos questions, sur tous nos canaux.</span>
                         </div>
 
                         <img class="position-absolute right-0" style="right:0; top: -140px; bottom: 0; "
