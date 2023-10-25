@@ -80,6 +80,31 @@
             title: "Caution",
             description: "L’assurance caution est un gage de confiance entre le donneur d’ordre (VOUS)  et le bénéficiaire qui doit recevoir l'indemnité en cas de non exécution des clauses du contrat."
           },
+          {
+          title: "Santé et accidents",
+          description:
+            "Tirer le meilleur de vos employés; protégez-les en assurant la prise en charge des soins médicaux en cas d’accidents, de maladie et de grossesse.",
+        },
+        {
+          title: "Tous risques chantiers",
+          description:
+            "Protégez vos chantiers contre les dommages accidentels pouvant impacter le bon déroulement des travaux et vous entraîner des pertes financières.",
+        },
+        {
+          title: "Autres risques techniques",
+          description:
+            "Pour tout autre risque sortant du cadre ci-dessus listé, veuillez nous contacter au 1361. Notre équipe technique vous guidera dans le choix des solutions.",
+        },
+        {
+          title: "Multirisque professionnelle",
+          description:
+            "Protégez votre patrimoine immobilier et mobilier afin d’assurer la pérennité de vos activités.",
+        },
+        {
+          title: "Transport",
+          description:
+            "Quel que soit le type de transport (terrestre, maritime, aérien), nous vous permettons d’assurer les conséquences pécuniaires du fait des dommages subis par vos marchandises transportées.",
+        },
         ]
       };
     }
