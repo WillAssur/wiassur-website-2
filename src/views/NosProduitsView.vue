@@ -12,9 +12,9 @@
                 class="d-flex align-items-center justify-content-center circle"
                 style="background: #61C0C7;"
               ></div>
-              <div class="d-flex flex-column align-items-center">
+              <div class="d-flex flex-column align-items-start">
                 <h3
-                  class="fw-bold mt-3 mb-2 text-center"
+                  class="fw-bold mt-3 mb-2 text-start"
                   style="
                     color: #080507;
                     font-size: 20px;
@@ -23,7 +23,7 @@
                   "
                 >{{ item.title }}</h3>
                 <p
-                  class="text-center px-3"
+                  class="text-start px-3"
                   style="color: #080507; font-size: 16px; font-family: Avenir; font-weight: 400;"
                 >{{ item.description }}</p>
               </div>
@@ -46,9 +46,9 @@
                 class="circle d-flex align-items-center justify-content-center"
                 style="background: #61C0C7;"
               ></div>
-              <div class="d-flex flex-column align-items-center">
+              <div class="d-flex flex-column align-items-start">
                 <h3
-                  class="fw-bold mt-3 mb-2 text-center"
+                  class="fw-bold mt-3 mb-2 text-start"
                   style="
                     color: #080507;
                     font-size: 20px;
@@ -57,7 +57,7 @@
                   "
                 >{{ product.title }}</h3>
                 <p
-                  class="text-center px-3"
+                  class="text-start px-3"
                   style="color: #080507; font-size: 16px; font-family: Avenir; font-weight: 400;"
                 >{{ product.description }}</p>
               </div>
