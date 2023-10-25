@@ -1,5 +1,5 @@
 <template>
-    <div ref="header" class="position-fixed w-100 left-0 right-0" style="top: 60px;">
+    <div ref="header" class="position-fixed w-100 left-0 right-0" style="top: 60px; z-index: 99999;">
         <div class="container ">
             <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow  p-3">
                 <div class="d-flex align-items-center">
