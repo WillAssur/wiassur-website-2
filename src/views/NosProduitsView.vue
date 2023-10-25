@@ -20,6 +20,8 @@
                     font-size: 20px;
                     font-family: Avenir;
                     font-weight: 800;
+                    padding-left: 0; /* Retirer le padding à gauche */
+                    padding-right: 0; /* Retirer le padding à droite */
                   "
                 >{{ item.title }}</h3>
                 <p
@@ -54,6 +56,8 @@
                     font-size: 20px;
                     font-family: Avenir;
                     font-weight: 800;
+                    padding-left: 0; /* Retirer le padding à gauche */
+                    padding-right: 0; /* Retirer le padding à droite */
                   "
                 >{{ product.title }}</h3>
                 <p
