@@ -1,7 +1,7 @@
 <template>
     <div class="page">
       <b-container>
-        <h2 class="text-start fw-bold mb-5">Nos produits pour les particuliers</h2>
+        <h2 class="text-center fw-bold mb-5">Nos produits pour les particuliers</h2>
         <b-row>
           <b-col cols="12" md="6" lg="4" v-for="(item, index) in items" :key="index">
             <b-card
@@ -35,7 +35,7 @@
       <div style="height: 50px;"></div>
   
       <b-container>
-        <h2 class="text-start fw-bold mb-5">Nos produits pour les entreprises</h2>
+        <h2 class="text-center fw-bold mb-5">Nos produits pour les entreprises</h2>
         <b-row>
           <b-col cols="12" md="6" lg="4" v-for="(product, index) in products" :key="index">
             <b-card
