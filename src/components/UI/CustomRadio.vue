@@ -1,6 +1,6 @@
 <template>
-    <div v-for="(option, index) in options" :class="{ 'option-selected': selected === option.value }" :key="index"
-        @click="selectOptions(option.value)" class="d-flex flex-column mt-2 option">
+    <div v-if="options.length > 0"  v-for="(option, index) in options" :class="{ 'option-selected': selected === option?.value }" :key="index"
+         @click="selectOptions(option.value as string)" class="d-flex flex-column mt-2 option">
         <div class="d-flex align-items-center justify-content-between">
             <span v-if="label">{{ prefix }} {{ label }}</span>
 
@@ -28,16 +28,18 @@ export default {
             default: null,
         },
         options: {
-            type: Array,
+            type: Array as any ,
             default: [
                 ,
                 {
                     text: "Option 1",
                     value: "Option 1",
+                    prefix: "/images/flags/CI.svg"
                 },
                 {
                     text: "Option 2",
                     value: "Option 2",
+                    prefix: "/images/flags/CI.svg"
                 },
             ],
         },

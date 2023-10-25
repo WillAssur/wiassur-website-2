@@ -14,8 +14,8 @@ export default defineComponent({
     data() {
         return {
             show: false,
-            links: clientLinks.links,
-            extraLinks: clientLinks.extraLinks
+            links: clientLinks.links as any,
+            extraLinks: clientLinks.extraLinks as any
         };
     },
     methods: {

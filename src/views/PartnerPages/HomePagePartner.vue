@@ -3,11 +3,9 @@
         home page partner
     </div>
 </template>
-<script>
+<script lang="ts">
 export default {
+    name: 'HomePagePartner',
     
 }
 </script>
-<style lang="">
-    
-</style>

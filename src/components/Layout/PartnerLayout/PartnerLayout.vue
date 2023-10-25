@@ -18,8 +18,8 @@ export default defineComponent({
 
 
             show: false,
-            links: partnerLinks.links,
-            extraLinks: partnerLinks.extraLinks,
+            links: partnerLinks.links as any,
+            extraLinks: partnerLinks.extraLinks as any,
 
         };
     },

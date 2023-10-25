@@ -1,4 +1,32 @@
-export const clientLinks: any =
+    interface IClientPartnerLinks {
+        links: {
+            title: string,
+            link: string
+        }[],
+        extraLinks: {
+            title: string,
+            link: string
+        }[]
+    }
+
+
+    interface IFooterLinks {
+        sectionTitle: string,
+        links: {
+            label: string,
+            href: string
+        }[]
+    }
+
+    interface ISocialLinks {
+        alt: string,
+        href: string,
+        img: string
+    }
+    
+
+
+export const clientLinks: IClientPartnerLinks =
 {
     links: [
         {
@@ -34,7 +62,7 @@ export const clientLinks: any =
 }
 
 
-export const partnerLinks: any =
+export const partnerLinks: IClientPartnerLinks =
 {
     links: [
         {
@@ -66,7 +94,7 @@ export const partnerLinks: any =
 }
 
 
-export const footerLinks: any[] = [
+export const footerLinks: IFooterLinks[] = [
     {
         sectionTitle: 'A propos',
         links: [
@@ -154,7 +182,7 @@ export const footerLinks: any[] = [
 
 ]
 
-export const socialLinks: any[] = [
+export const socialLinks: ISocialLinks[] = [
     {
         alt: 'Facebook',
         href: '#',
@@ -177,7 +205,7 @@ export const socialLinks: any[] = [
     },
 ]
 
-export const appLinks: any[] = [
+export const appLinks: ISocialLinks[] = [
     {
         alt: 'Google Play',
         href: '#',

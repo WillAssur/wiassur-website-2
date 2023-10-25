@@ -1,0 +1,1 @@
+import{_ as e,a,o as r}from"./index-73128766.js";const o={name:"HomePagePartner"};function t(n,c,s,p,_,m){return r(),a("div",null," home page partner ")}const l=e(o,[["render",t]]);export{l as default};

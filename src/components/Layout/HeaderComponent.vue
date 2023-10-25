@@ -21,7 +21,7 @@
                 <b-nav class="ms-n3">
 
 
-                    <LinkComponent v-for="(link, index) in links" :key="index" :title="link.title" :link="link.link" />
+                    <LinkComponent v-for="(link, index) in links " :key="index" :title="link.title" :link="link.href" />
 
                 </b-nav>
 
@@ -41,16 +41,16 @@ export default {
     components: { LogoComponent, LinkComponent },
     props: {
         links: {
-            type: Array,
+            // type:  Array as any as PropType<Link>,
             default: [
                 {
                     title: "Link1",
-                    link: "#"
+                    href: "#"
                 }
             ]
         },
         extraLinks: {
-            type: Array,
+            // type: Array ,
             default: [
                 {
                     title: "Option1",
