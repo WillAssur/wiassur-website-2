@@ -15,9 +15,7 @@
                     </b-badge>
 
 
-                    <b-badge variant="primary">
-                        kokok
-                    </b-badge>
+                   
                 </div>
 
                 <b-nav class="ms-n3">

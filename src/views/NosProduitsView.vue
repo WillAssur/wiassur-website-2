@@ -6,7 +6,7 @@
           <b-col cols="12" md="6" lg="4" v-for="(item, index) in items" :key="index">
             <b-card
               class="mb-4"
-              style="height: 317px; background: white; border: 1px solid #e2e8f0; border-radius: 16px;"
+              style="height: 317px; background: white; border: 0px solid #e2e8f0; border-radius: 16px;"
             >
               <div
                 class="d-flex align-items-center justify-content-center circle"
@@ -40,7 +40,7 @@
           <b-col cols="12" md="6" lg="4" v-for="(product, index) in products" :key="index">
             <b-card
               class="mb-4"
-              style="height: 317px; background: white; border: 1px solid #e2e8f0; border-radius: 16px;"
+              style="height: 317px; background: white; border: 0px solid #e2e8f0; border-radius: 16px;"
             >
               <div
                 class="circle d-flex align-items-center justify-content-center"
@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9; /* Ajout d'un arrière-plan */
+    background-color: var(--White, #F6EEF3); /* Ajout d'un arrière-plan */
   }
   
   .fw-bold {
