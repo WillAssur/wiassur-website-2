@@ -1,9 +1,10 @@
 <template>
-    <div ref="header" class="position-fixed w-100 left-0 right-0" style="top: 60px;">
+    <div ref="header" class="position-fixed w-100 left-0 right-0" style="top: 60px; z-index: 99999;">
         <div class="container ">
             <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow  p-3">
                 <div class="d-flex align-items-center">
-                    <LogoComponent />
+               <router-link to="/"> <LogoComponent /></router-link>
+                   
                     <b-badge variant="warning " class="px-3 py-2 text-dark rounded-5 ms-3">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="me-1">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -21,7 +22,8 @@
                 <b-nav class="ms-n3">
 
 
-                    <LinkComponent v-for="(link, index) in links " :key="index" :title="link.title" :link="link.href" />
+                    <LinkComponent v-for="(link, index) in links " :key="index" :title="link.title" :link="link.link" />
+
 
                 </b-nav>
 
@@ -45,7 +47,7 @@ export default {
             default: [
                 {
                     title: "Link1",
-                    href: "#"
+                    link: "#"
                 }
             ]
         },
