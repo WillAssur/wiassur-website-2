@@ -2,12 +2,12 @@
   <b-tabs content-class="mt-3" style="width: 230px;" class="custom-tabs" fill>
     <b-tab title="Pays" active>
      <div>
-      <CustomRadio :options="optionsPays"/>
+      <CustomRadio :options="optionsPays" :optionSelected="optionsPays[0].value"/>
      </div>
     </b-tab>
     <b-tab title="Langue">
       <div>
-      <CustomRadio :options="optionsLangue"/>
+      <CustomRadio :options="optionsLangue" :optionSelected="optionsLangue[0].value"/>
      </div>
     </b-tab>
 
