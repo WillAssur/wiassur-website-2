@@ -1,6 +1,6 @@
 <template >
     <div class="page">
-        <b-container class="py-2">
+        <b-container class="pb-2">
             <b-row>
                 <b-col cols="6" class="d-flex flex-column align-items-start justify-content-center text-white">
                     <h1>
@@ -23,7 +23,7 @@
 
         <div class="bg-white py-5">
 
-            <b-container class="badge-special1 rounded-5 " style="padding: 48px 64px;">
+            <b-container class="badge-special1 rounded-5 " style=" padding: 48px 64px;">
                 <div class="d-flex flex-column align-items-center">
                     <h3 class="text-center mb-5">C’est là que vous intervenez! <br>
                         Faites partie de l’histoire et mettez l’avenir de l’InsurTech à votre service.</h3>
@@ -61,7 +61,7 @@
                     </b-col>
                     <b-col cols="2"></b-col>
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" alt="">
+                        <img src="/images/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
 
@@ -71,7 +71,7 @@
                 <b-row class="mb-5">
 
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" alt="">
+                        <img src="/images/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
                     <b-col cols="2"></b-col>
@@ -104,7 +104,7 @@
                     </b-col>
                     <b-col cols="2"></b-col>
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" alt="">
+                        <img src="/images/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
 
