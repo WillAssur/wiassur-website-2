@@ -3,7 +3,7 @@
         <div class="container ">
             <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow  p-3">
                 <div class="d-flex align-items-center">
-               <router-link to="/"> <LogoComponent /></router-link>
+               <router-link :to="linkTo"> <LogoComponent /></router-link>
                    
                     <b-badge variant="warning " class="px-3 py-2 text-dark rounded-5 ms-3">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="me-1">
@@ -76,6 +76,18 @@ export default {
 
 
         },
+    },
+
+    computed: {
+        linkTo () {
+           
+            if (this.$route.matched[0].name === 'partner-pages') {
+                return '/partner';
+            } else {
+                return '/';
+                
+            }
+        }  
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
