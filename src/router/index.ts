@@ -20,6 +20,11 @@ const router = createRouter({
           component: () => import('@/views/ClientsPages/DeclarerUnSinistreView.vue')
         },
         {
+          path: '/nos-produits',
+          name: 'nos-produits',
+          component: () => import('@/views/ClientsPages/NosProduitsView.vue')
+        },
+        {
           path: '/about',
           name: 'about',
           component: () => import('@/views/ClientsPages/AboutView.vue')
@@ -40,6 +45,8 @@ const router = createRouter({
         }
       ]
     }
+
+    
     // ... Autres routes
   ]
 

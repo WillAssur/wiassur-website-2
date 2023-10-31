@@ -36,7 +36,7 @@ export const clientLinks: IClientPartnerLinks =
         },
         {
             title: "Produits",
-            link: "#"
+            link: "/nos-produits"
         },
         {
             title: "Aide",
@@ -44,7 +44,7 @@ export const clientLinks: IClientPartnerLinks =
         },
         {
             title: "A propos",
-            link: "#"
+            link: "/about"
         }
     ],
     extraLinks: [
