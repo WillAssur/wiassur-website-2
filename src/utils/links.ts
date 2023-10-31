@@ -67,7 +67,7 @@ export const partnerLinks: IClientPartnerLinks =
     links: [
         {
             title: "Courtier",
-            link: "#"
+            link: "/partner/courtier"
 
         },
         {

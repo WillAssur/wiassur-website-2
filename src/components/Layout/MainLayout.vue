@@ -65,8 +65,6 @@ export default defineComponent({
 
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
-        const routeActuelle = this.$route;
-        console.log('Nom de la route :', this.$route.name);
     },
     beforeDestroy() {
         window.removeEventListener('scroll', this.handleScroll);

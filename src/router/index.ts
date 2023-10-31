@@ -34,7 +34,7 @@ const router = createRouter({
 
     {
 
-      path: '/partner',
+      path: '/partner/',
       name: 'partner-pages',
       component: () => import('@/components/Layout/PartnerLayout/PartnerLayout.vue'),
       children: [
@@ -42,6 +42,11 @@ const router = createRouter({
           path: '',
           name: 'partner-home-page',
           component: () => import('@/views/PartnerPages/HomePagePartner.vue')
+        },
+        {
+          path: '/partner/courtier',
+          name: 'Courtier',
+          component: () => import('@/views/PartnerPages/CourtierPage.vue')
         }
       ]
     }
