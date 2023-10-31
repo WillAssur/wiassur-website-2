@@ -5086,6 +5086,11 @@ a.badge-warning.focus {
   color: #fff !important;
   background: linear-gradient(98deg, #61C0C7 -15.04%, #FFB800 134.23%) !important;
 
+}
+
+
+.rotate{
+
 transform: rotate(-3deg);
 }
 

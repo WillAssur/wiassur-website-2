@@ -36,12 +36,12 @@ export default defineComponent({
 
 })
 </script>
-<style >
+<style scoped>
     .link{
         text-decoration: none !important;
     }
 
     .no-space > a{
-            padding: 0;
+            padding: 0 !important;
     }
 </style>
