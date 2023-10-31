@@ -12,9 +12,9 @@
                             Parce que l’assurance, c’est
                         </span>
 
-                        <b-badge  class="ms-3 badge-special1  ">la
+                        <b-badge class="ms-3 badge-special1  ">la
                             sérénité</b-badge>
-                        <b-badge  class="ms-2  badge-special2  ">la
+                        <b-badge class="ms-2  badge-special2  ">la
                             protection</b-badge>
 
 
@@ -94,20 +94,17 @@
                 <b-col cols="4" class="d-flex flex-column justify-content-center">
                     <h2 class="mb-4 fs-1">Nos équipes locales.</h2>
 
-                    <div class="w-75">
-                        <p>
+                    <p style="width: 80%;">
                             Lorsqu’on dit proche de vous, on l’est vraiment.
                         </p>
+                    <div class="w-75">
+                       
 
                         <div>
-                            <b-badge  class=" mt-2 badge-special1  "
-                               >Côte d’Ivoire</b-badge>
-                            <b-badge  class="ms-2 mt-2  badge-special2 "
-                               >Sénégal</b-badge>
-                            <b-badge  class=" mt-2  badge-special1 "
-                               >Ghana</b-badge>
-                            <b-badge  class="ms-2 mt-2  badge-special2 "
-                               >Mali</b-badge>
+                            <b-badge class=" mt-2 badge-special1  ">Côte d’Ivoire</b-badge>
+                            <b-badge class="ms-2 mt-2  badge-special2 rotate ">Sénégal</b-badge>
+                            <b-badge class=" mt-2  badge-special1 ">Ghana</b-badge>
+                            <b-badge class="ms-2 mt-2  badge-special2 rotate ">Mali</b-badge>
                         </div>
                     </div>
 
@@ -121,43 +118,48 @@
             </b-row>
         </b-container>
 
+        <MembersComponent/>
+      
         <div class="bg-white">
-        <b-container class="bg-white py-5 d-flex flex-column align-items-center">
-            <h2 class="py-1">Tous nos partenaires engagés</h2>
-            <p class="w-50 text-center">
-                On a tous eu une expérience désastreuse avec l’assurance. C’est comme en amour. La vie est belle et pleine
-                de surprises. L’important c’est de pouvoir faire face à ces évènements. nous sommes là pour vous accompagner
-                tout au long de votre vie.
-            </p>
+            <b-container class="bg-white py-5 d-flex flex-column align-items-center">
+                <h2 class="py-1">Tous nos partenaires engagés</h2>
+                <p class="w-50 text-center">
+                    On a tous eu une expérience désastreuse avec l’assurance. C’est comme en amour. La vie est belle et
+                    pleine
+                    de surprises. L’important c’est de pouvoir faire face à ces évènements. nous sommes là pour vous
+                    accompagner
+                    tout au long de votre vie.
+                </p>
 
 
 
-            <div class="d-flex justify-content-around w-100 partners">
-                <!-- partneraire -->
+                <div class="d-flex justify-content-around w-100 partners">
+                    <!-- partneraire -->
 
-                <img src="/images/partners/atlanta.svg" alt="atlanta">
-                <img src="/images/partners/sanlam.svg" alt="atlanta">
-                <img src="/images/partners/amsa.svg" alt="atlanta">
-                <img src="/images/partners/wafa-assurance.svg" alt="atlanta">
-                <img src="/images/partners/nsia.svg" alt="atlanta">
-                <img src="/images/partners/sunu.svg" alt="atlanta">
-                <img src="/images/partners/laLoyale.svg" alt="atlanta">
-                <img src="/images/partners/comar.svg" alt="atlanta">
-                <img src="/images/partners/atlantique.svg" alt="atlanta">
-                
-                
-                
+                    <img src="/images/partners/atlanta.svg" alt="atlanta">
+                    <img src="/images/partners/sanlam.svg" alt="atlanta">
+                    <img src="/images/partners/amsa.svg" alt="atlanta">
+                    <img src="/images/partners/wafa-assurance.svg" alt="atlanta">
+                    <img src="/images/partners/nsia.svg" alt="atlanta">
+                    <img src="/images/partners/sunu.svg" alt="atlanta">
+                    <img src="/images/partners/laLoyale.svg" alt="atlanta">
+                    <img src="/images/partners/comar.svg" alt="atlanta">
+                    <img src="/images/partners/atlantique.svg" alt="atlanta">
 
-            </div>
-        </b-container>
-    </div>
+
+
+
+                </div>
+            </b-container>
+        </div>
 
     </div>
 </template>
 <script lang="ts">
+import  MembersComponent from '@/components/ClientComponents/MembersComponent.vue';
 import { defineComponent } from 'vue'
 export default defineComponent({
-
+    components: { MembersComponent }
 })
 </script>
 <style scoped>
@@ -168,7 +170,7 @@ export default defineComponent({
 
 }
 
-.partners > img{
+.partners>img {
     width: 100px;
 }
 </style>

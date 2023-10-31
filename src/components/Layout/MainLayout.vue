@@ -2,9 +2,9 @@
     <div class="position-relative h-100 ">
 
 
-        <div ref="header" class="position-fixed " style="left: 0; right: 0; opacity: 1; z-index: 100000;">
+        <div :class="theming" ref="header" class="position-fixed " style="left: 0; right: 0; opacity: 1; z-index: 100000;">
             <div class="d-flex justify-content-between align-items-center py-2 container w-100">
-                <b-nav>
+                <b-nav  class="theming-plus">
 
                     <LinkComponent title="Clients" link="/" />
                     <LinkComponent title="Partenaires" link="/partner" />
@@ -50,6 +50,19 @@ export default defineComponent({
             }
         },
     },
+
+    computed: {
+        theming() {
+            if (this.$route.name === 'partner-home-page') {
+                return 'text-white';
+            } else {
+                return 'text-black';
+                
+            }
+            
+        }
+    },
+
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
     },
@@ -67,5 +80,15 @@ export default defineComponent({
 <style >
 .min-h-100vh {
     min-height: 100vh;
+}
+
+.text-white {
+    color: white !important;
+
+    fill: white !important;
+}
+
+.text-white .theming-plus *{
+    color: white !important;
 }
 </style>
