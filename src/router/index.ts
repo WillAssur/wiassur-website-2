@@ -45,8 +45,18 @@ const router = createRouter({
         },
         {
           path: '/partner/courtier',
-          name: 'Courtier',
+          name: 'courtier-page',
           component: () => import('@/views/PartnerPages/CourtierPage.vue')
+        },
+        {
+          path: '/partner/conseiller',
+          name: 'conseiller-page',
+          component: () => import('@/views/PartnerPages/ConseillerPage.vue')
+        },
+        {
+          path: '/partner/affinitaire',
+          name: 'affinitaire-page',
+          component: () => import('@/views/PartnerPages/AffinitairePage.vue')
         }
       ]
     }
