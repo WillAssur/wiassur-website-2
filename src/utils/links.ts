@@ -72,11 +72,11 @@ export const partnerLinks: IClientPartnerLinks =
         },
         {
             title: "Conseiller WiASSUR",
-            link: "#"
+            link: "/partner/conseiller"
         },
         {
             title: "Partenaire affinitaire",
-            link: "#"
+            link: "/partner/affinitaire"
         },
     ],
     extraLinks: [
