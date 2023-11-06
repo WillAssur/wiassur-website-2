@@ -100,7 +100,7 @@ export const footerLinks: IFooterLinks[] = [
         links: [
             {
                 label: 'Qui sommes-nous ?',
-                href: '#'
+                href: '/about'
             },
             {
                 label: 'Carrière',
@@ -117,7 +117,7 @@ export const footerLinks: IFooterLinks[] = [
         links: [
             {
                 label: 'Apercus des produits',
-                href: '/comparer'
+                href: '/nos-produits'
             },
            
         ]
@@ -149,11 +149,11 @@ export const footerLinks: IFooterLinks[] = [
         links: [
             {
                 label: 'Devenir partenaire',
-                href: '#'
+                href: '/partner'
             },
             {
                 label: 'Courtier',
-                href: '#'
+                href: '/partner/courtier'
             },
             {
                 label: 'Agent',
@@ -161,7 +161,7 @@ export const footerLinks: IFooterLinks[] = [
             },
             {
                 label: 'Partenaire affinitaire',
-                href: '#'
+                href: '/partner/affinitaire'
             },
            
 

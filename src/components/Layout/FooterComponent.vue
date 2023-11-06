@@ -34,12 +34,14 @@
 
                 </div>
 
-                <div class="border-top pt-3">
+                <div class="border-top pt-3 d-flex flex-column">
                     <span>Copyright © 2023</span>
-                    <b-nav vertical>
-                        <LinkComponent className="no-space mt-1" link="#" title="Condition d'utilisation" />
-                        <LinkComponent className="no-space mt-1" link="#" title="Politique de confidentialité" />
-                    </b-nav>
+                   
+                        <a href="#" class="my-1" >Condition d'utilisation</a>
+                        <a  href="#">Politique de confidentialité</a>
+                        <!-- <LinkComponent className="no-space mt-1" link="#" title="Condition d'utilisation" />
+                        <LinkComponent className="no-space mt-1" link="#" title="Politique de confidentialité" /> -->
+                   
                 </div>
             </b-col>
             <b-col cols="6">
