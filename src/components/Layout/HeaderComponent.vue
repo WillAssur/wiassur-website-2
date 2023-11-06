@@ -3,8 +3,10 @@
         <div class="container ">
             <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow  p-3">
                 <div class="d-flex align-items-center">
-               <router-link :to="linkTo"> <LogoComponent /></router-link>
-                   
+                    <router-link :to="linkTo">
+                        <LogoComponent />
+                    </router-link>
+
                     <b-badge variant="warning " class="px-3 py-2 text-dark rounded-5 ms-3">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="me-1">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -16,7 +18,7 @@
                     </b-badge>
 
 
-                   
+
                 </div>
 
                 <b-nav class="ms-n3">
@@ -28,8 +30,14 @@
                 </b-nav>
 
                 <div>
-                    <b-button class="me-2" variant="primary">{{ extraLinks[0].title }}</b-button>
-                    <b-button variant="outline-primary">{{ extraLinks[1].title }}</b-button>
+
+                    <router-link :to=" extraLinks[0].link">
+                        <b-button class="me-2" variant="primary">{{ extraLinks[0].title }}</b-button>
+                    </router-link>
+
+                    <router-link :to="extraLinks[0].link">
+                        <b-button variant="outline-primary">{{ extraLinks[1].title }}</b-button>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -79,15 +87,15 @@ export default {
     },
 
     computed: {
-        linkTo () {
-           
+        linkTo() {
+
             if (this.$route.matched[0].name === 'partner-pages') {
                 return '/partner';
             } else {
                 return '/';
-                
+
             }
-        }  
+        }
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);

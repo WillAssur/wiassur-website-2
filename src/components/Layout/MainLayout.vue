@@ -11,9 +11,9 @@
 
                 </b-nav>
 
-                <SelectComponent label="Côte d’Ivoire (FR)">
+             
                     <InternalizationComponent />
-                </SelectComponent>
+              
 
             </div>
         </div>
