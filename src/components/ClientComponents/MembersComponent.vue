@@ -16,7 +16,7 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import MemberComponent from './UI/MemberComponent.vue';
+import MemberComponent from '@/components/UI/MemberComponent.vue';
 
 export default defineComponent({
     name: 'MembersComponent',

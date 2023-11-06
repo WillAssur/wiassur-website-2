@@ -11,9 +11,9 @@
 
                 </b-nav>
 
-                <SelectComponent label="Côte d’Ivoire (FR)">
+             
                     <InternalizationComponent />
-                </SelectComponent>
+              
 
             </div>
         </div>
@@ -53,7 +53,9 @@ export default defineComponent({
 
     computed: {
         theming() {
-            if (this.$route.name === 'partner-home-page') {
+
+                console.log(this.$route.matched[0].name);
+            if (this.$route.matched[0].name === 'partner-pages') {
                 return 'text-white';
             } else {
                 return 'text-black';

@@ -71,6 +71,7 @@ export default {
             this.selected = value;
 
             this.action(value);
+            this.$emit("optionChildSelected", value);
         },
     },
   mounted() {

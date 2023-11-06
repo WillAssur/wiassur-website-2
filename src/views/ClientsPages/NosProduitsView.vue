@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <b-container>
-      <h2 class="text-start fw-bold mb-5">Nos produits pour les particuliers</h2>
+      <h1 class="text-start fw-bold mb-5">Nos produits pour les particuliers</h1>
       <b-row>
         <b-col class="mb-4" cols="12" md="6" lg="4" v-for="(item, index) in items" :key="index">
           <b-card  style=" min-height: 317px; height: 100%; width: 100%; padding: 10px; background: white; border:none; border-radius: 16px;">

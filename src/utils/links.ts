@@ -1,4 +1,4 @@
-    interface IClientPartnerLinks {
+    export interface IClientPartnerLinks {
         links: {
             title: string,
             link: string
@@ -10,7 +10,7 @@
     }
 
 
-    interface IFooterLinks {
+    export interface IFooterLinks {
         sectionTitle: string,
         links: {
             label: string,
@@ -18,7 +18,7 @@
         }[]
     }
 
-    interface ISocialLinks {
+   export  interface ISocialLinks {
         alt: string,
         href: string,
         img: string
@@ -51,7 +51,7 @@ export const clientLinks: IClientPartnerLinks =
 
         {
             title: "Comparer",
-            link: "#"
+            link: "/comparer"
         },
         {
             title: "Se connecter",
@@ -72,11 +72,11 @@ export const partnerLinks: IClientPartnerLinks =
         },
         {
             title: "Conseiller WiASSUR",
-            link: "#"
+            link: "/partner/conseiller"
         },
         {
             title: "Partenaire affinitaire",
-            link: "#"
+            link: "/partner/affinitaire"
         },
     ],
     extraLinks: [
@@ -100,14 +100,14 @@ export const footerLinks: IFooterLinks[] = [
         links: [
             {
                 label: 'Qui sommes-nous ?',
+                href: '/about'
+            },
+            {
+                label: 'Carrière',
                 href: '#'
             },
             {
-                label: 'Devenir partenaire',
-                href: '#'
-            },
-            {
-                label: 'Presse',
+                label: 'Code de conduite',
                 href: '#'
             }
         ]
@@ -116,41 +116,22 @@ export const footerLinks: IFooterLinks[] = [
         sectionTitle: 'Comparateur',
         links: [
             {
-                label: 'Auto',
-                href: '#'
+                label: 'Apercus des produits',
+                href: '/nos-produits'
             },
-            {
-                label: 'Accident de la vie',
-                href: '#'
-            },
-            {
-                label: 'Santé',
-                href: '#'
-            },
-            {
-                label: 'Voyage',
-                href: '#'
-            },
-            {
-                label: 'Habitation',
-                href: '#'
-            },
-            {
-                label: 'Scolaire',
-                href: '#'
-            }
+           
         ]
     }
     ,
     {
-        sectionTitle: 'Assurance',
+        sectionTitle: 'AIDE',
         links: [
             {
-                label: 'Glossaire',
-                href: '#'
+                label: 'Déclarer un sinistre',
+                href: '/declarer-un-sinistre'
             },
             {
-                label: 'FAQ',
+                label: 'Contactez-bous',
                 href: '#'
             },
             {
@@ -164,12 +145,25 @@ export const footerLinks: IFooterLinks[] = [
 
 
     {
-        sectionTitle: 'Espace client',
+        sectionTitle: 'Partenaire',
         links: [
             {
-                label: 'Connexion',
+                label: 'Devenir partenaire',
+                href: '/partner'
+            },
+            {
+                label: 'Courtier',
+                href: '/partner/courtier'
+            },
+            {
+                label: 'Agent',
                 href: '#'
             },
+            {
+                label: 'Partenaire affinitaire',
+                href: '/partner/affinitaire'
+            },
+           
 
         ]
     }

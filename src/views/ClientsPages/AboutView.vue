@@ -156,7 +156,7 @@
     </div>
 </template>
 <script lang="ts">
-import  MembersComponent from '@/components/MembersComponent.vue';
+import  MembersComponent from '@/components/ClientComponents/MembersComponent.vue';
 import { defineComponent } from 'vue'
 export default defineComponent({
     components: { MembersComponent }
