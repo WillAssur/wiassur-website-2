@@ -120,15 +120,15 @@
 
                 <div class=" d-flex align-items-center justify-content-around w-100 my-5">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="/images/icon.svg" alt="">
+                        <img src="public/images/image 3.png" alt="">
                         <h3 class="mt-3">Simple</h3>
                     </div>
                     <div class="d-flex flex-column align-items-center">
-                        <img src="/images/icon.svg" alt="">
+                        <img src="public/images/image 4.png" alt="">
                         <h3 class="mt-3">Digital</h3>
                     </div>
                     <div class="d-flex flex-column align-items-center">
-                        <img src="/images/icon.svg" alt="">
+                        <img src="public/images/image 5.png" alt="">
                         <h3 class="mt-3">Efficace</h3>
                     </div>
                 </div>
