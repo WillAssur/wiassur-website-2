@@ -4,11 +4,12 @@
             <b-row>
                 <b-col cols="4" class="d-flex align-items-start flex-column justify-content-center">
                     <h1>
-                        L’assurance, Simple, Efficace
+                        L’assurance, <br>
+                        Simple, Efficace
                     </h1>
                     <p class="my-5">
-                        Toutes les offres du marché, tous les assureurs.
-                        Simple, digital, meilleur rapport qualité / prix.
+                        Toutes les offres du marché, tous les assureurs. <br>
+                        Simple, digital, meilleur rapport qualité / prix. <br>
                         C’est l’expérience WiASSUR
                     </p>
                     <b-button variant="primary">
@@ -53,7 +54,7 @@
 
                 <b-row class="mt-5">
                     <b-col>
-                        <img src="/images/empty.png" alt="">
+                        <img src="public/images/App_QR_code_v2.png" alt="">
                     </b-col>
 
                     <b-col cols="1">
@@ -105,7 +106,7 @@
                     </b-col>
 
                     <b-col>
-                        <img src="/images/empty.png" alt="">
+                        <img src="public/images/insurance.png" alt="">
                     </b-col>
                 </b-row>
             </b-container>
