@@ -54,7 +54,7 @@
 
                 <b-row class="mt-5">
                     <b-col>
-                        <img src="public/images/App_QR_code_v2.png" alt="">
+                        <img src="public/images/Home page Client/App_QR_code_v2.png" alt="">
                     </b-col>
 
                     <b-col cols="1">
@@ -106,7 +106,7 @@
                     </b-col>
 
                     <b-col>
-                        <img src="public/images/insurance.png" alt="">
+                        <img src="public/images/Home page Client/insurance.png" alt="">
                     </b-col>
                 </b-row>
             </b-container>
@@ -120,15 +120,15 @@
 
                 <div class=" d-flex align-items-center justify-content-around w-100 my-5">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="public/images/image 3.png" alt="">
+                        <img src="public/images/Home page Client/image 3.png" alt="">
                         <h3 class="mt-3">Simple</h3>
                     </div>
                     <div class="d-flex flex-column align-items-center">
-                        <img src="public/images/image 4.png" alt="">
+                        <img src="public/images/Home page Client/image 4.png" alt="">
                         <h3 class="mt-3">Digital</h3>
                     </div>
                     <div class="d-flex flex-column align-items-center">
-                        <img src="public/images/image 5.png" alt="">
+                        <img src="public/images/Home page Client/image 5.png" alt="">
                         <h3 class="mt-3">Efficace</h3>
                     </div>
                 </div>
