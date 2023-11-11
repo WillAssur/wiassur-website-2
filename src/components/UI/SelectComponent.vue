@@ -1,6 +1,7 @@
 <template>
-    <div ref="select" class="position-relative">
-        <div @click="toggle" class='d-flex cursor-pointer justify-between align-items-center py-2'>
+    <div ref="select" :class="{'onFooter':onFooter}" class="position-relative  ">
+     
+        <div @click="toggle" class='d-flex cursor-pointer justify-between align-items-center py-2 '>
             <img :src="src" class="rounded-5 me-2" :alt="src">
 
             <span>{{ label }}</span>
@@ -47,6 +48,10 @@ export default defineComponent({
             type: String,
             default: '/images/flags/CI.svg'
         }
+        ,onFooter:{
+            type:Boolean,
+            default:false
+        }
 
     },
     data() {
@@ -89,6 +94,12 @@ export default defineComponent({
 </script>
 <style scoped>
 
+.onFooter{
+    padding: 5px 15px;
+    width: max-content;
+    border-radius: 10rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.048);
+}
 .scoped-color  > * {
     color: black !important;
 }

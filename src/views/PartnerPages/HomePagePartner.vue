@@ -152,7 +152,7 @@ Nous vous permettons de combiner vos compétences avec les derniers outils de ve
                     </p>
 
                     <b-button class="mt-3" variant="primary">
-                        en savoir plus
+                        En savoir plus
                     </b-button>
 
 
