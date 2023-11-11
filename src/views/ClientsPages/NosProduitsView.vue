@@ -1,20 +1,22 @@
 <template>
   <div class="page">
-    <b-container>
-      <h1 class="text-start fw-bold mb-5">Nos produits pour les particuliers</h1>
-      <b-row>
-        <b-col class="mb-4" cols="12" md="6" lg="4" v-for="(item, index) in items" :key="index">
-          <b-card  style=" min-height: 317px; height: 100%; width: 100%; padding: 10px; background: white; border:none; border-radius: 16px;">
-            <div class="d-flex align-items-center justify-content-center circle" style="background: #61C0C7;"></div>
-            <div class="d-flex flex-column align-items-start">
-              <h5 class="fw-bold mt-3 mb-2 text-start">{{ item.title }}</h5>
-              <p class="text-start" style="color: #080507; font-size: 16px; font-family: Avenir; font-weight: 400;">
-                {{ item.description }}</p>
-            </div>
-          </b-card>
-        </b-col>
-      </b-row>
-    </b-container>
+<b-container>
+  <h1 class="text-start fw-bold mb-5">Nos produits pour les particuliers</h1>
+  <b-row>
+    <b-col class="mb-4" cols="12" md="6" lg="4" v-for="(item, index) in items" :key="index">
+      <b-card style="min-height: 317px; height: 100%; width: 100%; padding: 10px; background: white; border: none; border-radius: 16px;">
+        <img :src="'public/images/Nos produits/' + item.icon" width="36" height="36" />
+
+        <div class="d-flex flex-column align-items-start">
+          <h5 class="fw-bold mt-3 mb-2 text-start">{{ item.title }}</h5>
+          <p class="text-start" style="color: #080507; font-size: 16px; font-family: Avenir; font-weight: 400;">
+            {{ item.description }}
+          </p>
+        </div>
+      </b-card>
+    </b-col>
+  </b-row>
+</b-container>
 
     <div style="height: 50px;"></div>
 
@@ -49,24 +51,29 @@ export default defineComponent({
         // ... (votre liste d'articles pour les particuliers)
         {
           title: 'Automobile',
-          description: 'Couvrez votre responsabilité civile du fait de l’utilisation de votre véhicule et aussi tous les autres dommages que pourrait subir votre véhicule.'
+          description: 'Couvrez votre responsabilité civile du fait de l’utilisation de votre véhicule et aussi tous les autres dommages que pourrait subir votre véhicule.',
+          icon: 'automobile.svg',
         },
         {
           title: 'Assurance vie et prévoyance',
-          description: 'Protégez vous contre tous les aléas de la vie liés à votre personne à titre particulier comme professionnel tels que le décès, ou l’invalidité afin d’assurer un avenir à vos proches.'
+          description: 'Protégez vous contre tous les aléas de la vie liés à votre personne à titre particulier comme professionnel tels que le décès, ou l’invalidité afin d’assurer un avenir à vos proches.',
+          icon: 'assurance vie et prevoyance.svg',
         },
         {
           title: 'Santé et accidents',
-          description: 'Nous prenons en charge vos soins médicaux en cas d’accidents, de maladie et de grossesse à travers un réseau de partenaires médicaux étendu.'
+          description: 'Nous prenons en charge vos soins médicaux en cas d’accidents, de maladie et de grossesse à travers un réseau de partenaires médicaux étendu.',
+          icon: 'sante et accidents.svg',
         },
         {
           title: 'Voyage',
-          description: 'Voyagez sereinement grâce à une assistance en cas de maladies subites, et des désagréments (Pertes de bagages, retard de vol…) subis au cours de votre voyage.'
+          description: 'Voyagez sereinement grâce à une assistance en cas de maladies subites, et des désagréments (Pertes de bagages, retard de vol…) subis au cours de votre voyage.',
+          icon: 'Voyage.svg',
         },
         {
           title: 'Habitation',
-          description: 'Votre maison est couverte contre les incendies et tous les dommages matériels. En plus, couvrez les conséquences pécuniaires de la responsabilité civile du fait des préjudices causés au tiers par les personnes, les animaux et les choses sous votre garde.'
-        }
+          description: 'Votre maison est couverte contre les incendies et tous les dommages matériels. En plus, couvrez les conséquences pécuniaires de la responsabilité civile du fait des préjudices causés au tiers par les personnes, les animaux et les choses sous votre garde.',
+          icon: 'habitation.svg',
+        },
       ],
       products: [
         // ... (votre liste de produits pour les entreprises)

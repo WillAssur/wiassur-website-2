@@ -4,7 +4,7 @@
             <b-row>
                 <b-col cols="6" class="d-flex flex-column align-items-start justify-content-center text-white">
                     <h1>
-                        Ensemble. <br>Plus simple. <br>Plus efficace 
+                        Ensemble. <br>Plus simple. <br>Plus efficace
                     </h1>
 
                     <p class="w-75">
