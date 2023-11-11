@@ -4,7 +4,7 @@
             <b-row>
                 <b-col cols="6" class="d-flex flex-column align-items-start justify-content-center text-white">
                     <h1>
-                        Rejoignez-nous pour faire de l’assurance simple et efficace
+                        Rejoignez-nous pour faire <br> de l’assurance simple et<br>efficace
                     </h1>
 
                     <p class="w-75">
@@ -17,7 +17,7 @@
                     </p>
                 </b-col>
                 <b-col cols="1"></b-col>
-                <b-col cols=""><img src="/images/booty-bg.svg" class="w-100 h-100" alt=""></b-col>
+                <b-col cols=""><img src="/images/other/booty-bg.svg" class="w-100 h-100" alt=""></b-col>
             </b-row>
         </b-container>
 
@@ -31,15 +31,17 @@
 
 
                 <div class="d-flex align-items-center justify-content-center">
+  <b-badge class="ms-2 badge-special2" style="padding: 6px 12px; transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(276deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+    <div style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">Plus de ventes</div>
+  </b-badge>
+  <b-badge class="ms-2 badge-special2" style="padding: 6px 12px; transform: rotate(-3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+    <div style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">Plus d’efficacité</div>
+  </b-badge>
+  <b-badge class="ms-2 badge-special2" style="padding: 6px 12px; transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+    <div style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">Plus d’innovation</div>
+  </b-badge>
+</div>
 
-                    <b-badge class="ms-2  badge-special2  ">la
-                        protection</b-badge>
-
-                    <b-badge class="ms-2  badge-special2  ">la
-                        protection</b-badge>
-                    <b-badge class="ms-2  badge-special2  ">la
-                        protection</b-badge>
-                </div>
             </b-container>
 
         </div>
@@ -53,7 +55,7 @@
                             courtier partenaire</h2>
 
                         <p>
-                            Passionné par la vente et la relation client ? Nous le sommes aussi. Nos politiques
+                            Passionné par la vente et la relation client ? Nous le sommes aussi. <br>Nos politiques
                             personnalisées et innovantes, sans oublier nos processus entièrement numériques, vous aident à
                             développer vos ventes en un instant. Vous restez totalement indépendant mais avez accès à tous
                             les tarifs et tous les produits sur le marché.
@@ -61,7 +63,7 @@
                     </b-col>
                     <b-col cols="2"></b-col>
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" style="width:100%" alt="">
+                        <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
 
@@ -71,7 +73,7 @@
                 <b-row class="mb-5">
 
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" style="width:100%" alt="">
+                        <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
                     <b-col cols="2"></b-col>
@@ -104,7 +106,7 @@
                     </b-col>
                     <b-col cols="2"></b-col>
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" style="width:100%" alt="">
+                        <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
 

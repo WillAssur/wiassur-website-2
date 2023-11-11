@@ -113,7 +113,7 @@
                 <b-col></b-col>
                 <b-col cols="6">
 
-                    <img src="/images/carte-dafrique.svg" alt="">
+                    <img src="/images/other/carte-dafrique.svg" alt="">
                 </b-col>
             </b-row>
         </b-container>
