@@ -7,4 +7,3 @@ import MainLayout from './components/Layout/MainLayout.vue';
 </template>
 
 
-<style scoped></style>
