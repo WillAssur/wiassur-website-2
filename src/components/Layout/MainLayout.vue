@@ -2,9 +2,9 @@
     <div class="position-relative h-100 ">
 
 
-        <div :class="theming" ref="header" class="position-fixed " style="left: 0; right: 0; opacity: 1; z-index: 100000;">
-            <div class="d-flex justify-content-between align-items-center py-2 container w-100">
-                <b-nav  class="theming-plus">
+        <div :class="theming" ref="header" class="position-fixed " style="left: 0; right: 0; opacity: 1;">
+            <div class="d-flex flex-column-reverse align-items-start flex-md-row justify-content-between align-items-md-center py-2 container w-100">
+                <b-nav inline  class="theming-plus">
 
                     <LinkComponent title="Clients" link="/" />
                     <LinkComponent title="Partenaires" link="/partner" />
@@ -47,7 +47,11 @@ export default defineComponent({
             const scrollingDiv: any = this.$refs.header;
             if (100 - window.scrollY > 0) {
                 scrollingDiv.style.opacity = 1 - window.scrollY/10;
-            }
+                scrollingDiv.style.zIndex =100000;
+                
+            }else{
+                scrollingDiv.style.zIndex =0;
+            } 
         },
     },
 

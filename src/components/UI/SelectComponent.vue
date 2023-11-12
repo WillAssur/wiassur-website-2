@@ -23,7 +23,7 @@
 
         <transition name="fade-in-top">
 
-            <b-card v-if="show" style="top: 100%; right: 0; border: none;" class="mt-2  position-absolute  zindex shadow">
+            <b-card v-if="show" style="top: 100%;  border: none;" class="mt-2  position-absolute  zindex shadow">
                 <div class="scoped-color">
                     <slot></slot>
                 </div>

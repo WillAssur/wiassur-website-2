@@ -1,13 +1,14 @@
 <template>
-    <div ref="header" class="position-fixed w-100 left-0 right-0" style="top: 60px; z-index: 99999;">
-        <div class="container ">
-            <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow  p-3">
+    <div ref="header" class="position-fixed w-100 left-0 right-0 header-fixed" style="">
+        <div class="container">
+            <div class="d-flex align-items-center bg-white justify-content-between rounded-4 shadow p-3">
                 <div class="d-flex align-items-center">
                     <router-link :to="linkTo">
                         <LogoComponent />
                     </router-link>
+                   
 
-                    <b-badge variant="warning " class="px-3 py-2 text-dark rounded-5 ms-3">
+                    <b-badge variant="warning " class="px-3 py-2 text-dark rounded-5 ms-3 d-none d-md-block">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="me-1">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                             <path
@@ -16,29 +17,28 @@
 
                         <a href="tel:1361" class="text-black fs-6">1361</a>
                     </b-badge>
-
-
-
                 </div>
+                <AnimateMenu />
 
-                <b-nav class="ms-n3">
-
-
-                    <LinkComponent v-for="(link, index) in links " :key="index" :title="link.title" :link="link.link" />
-
-
+                <b-nav class="ms-n3 d-none d-md-flex">
+                    <LinkComponent v-for="(link, index) in links" :key="index" :title="link.title" :link="link.link" />
                 </b-nav>
 
-                <div>
-
-                    <router-link :to=" extraLinks[0].link">
-                        <b-button class="me-2" variant="primary">{{ extraLinks[0].title }}</b-button>
+                <div class="d-none d-md-block">
+                    <router-link :to="extraLinks[0].link">
+                        <b-button class="me-2" variant="primary">{{
+                            extraLinks[0].title
+                        }}</b-button>
                     </router-link>
 
                     <router-link :to="extraLinks[0].link">
-                        <b-button variant="outline-primary">{{ extraLinks[1].title }}</b-button>
+                        <b-button variant="outline-primary">{{
+                            extraLinks[1].title
+                        }}</b-button>
                     </router-link>
                 </div>
+
+               
             </div>
         </div>
     </div>
@@ -46,63 +46,95 @@
 <script lang="ts">
 import LogoComponent from "../UI/LogoComponent.vue";
 import LinkComponent from "../UI/LinkComponent.vue";
+import AnimateMenu from "../UI/AnimateMenu.vue";
 
 export default {
-    components: { LogoComponent, LinkComponent },
+    components: { LogoComponent, LinkComponent, AnimateMenu },
     props: {
         links: {
             // type:  Array as any as PropType<Link>,
             default: [
                 {
                     title: "Link1",
-                    link: "#"
-                }
-            ]
+                    link: "#",
+                },
+            ],
         },
         extraLinks: {
             // type: Array ,
             default: [
                 {
                     title: "Option1",
-                    link: "#"
+                    link: "#",
                 },
                 {
                     title: "Option2",
-                    link: "#"
-                }
-            ]
+                    link: "#",
+                },
+            ],
+        },
+    },
+
+    data(){
+        return{
+            active:false
         }
     },
     methods: {
         handleScroll() {
             const scrollingDiv: any = this.$refs.header;
-            if (60 - window.scrollY > 15) {
-                scrollingDiv.style.top = `${60 - window.scrollY}px`;
+
+            if (window.innerWidth > 500) {
+
+                if (60 - window.scrollY > 15) {
+                    scrollingDiv.style.top = `${60 - window.scrollY}px`;
+                }
+              
+            }
+            else{
+                if (90 - window.scrollY > 10) {
+                    scrollingDiv.style.top = `${90 - window.scrollY}px`;
+                }
+                    
             }
 
 
-
-
+           
         },
+
+        showMenuMobile(){
+            this.active = !this.active
+        }
     },
 
     computed: {
         linkTo() {
-
-            if (this.$route.matched[0].name === 'partner-pages') {
-                return '/partner';
+            if (this.$route.matched[0].name === "partner-pages") {
+                return "/partner";
             } else {
-                return '/';
-
+                return "/";
             }
-        }
+        },
     },
     mounted() {
-        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll);
     },
     beforeDestroy() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+        window.removeEventListener("scroll", this.handleScroll);
+    },
 };
 </script>
-<style></style>
+<style scoped>
+.header-fixed {
+    top: 60px;
+    z-index: 99999;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .header-fixed {
+   top: 90px;
+}
+}
+</style>

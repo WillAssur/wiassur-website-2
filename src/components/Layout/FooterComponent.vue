@@ -1,9 +1,13 @@
 <template >
     <b-container class="px-3  footer">
+        <div class="mb-5">
+            <InternalizationComponent onFooter/>
+        </div>
+     
         <b-row class="justify-content-md-center">
             <b-col class="d-flex flex-column align-items-start justify-content-between">
                 <LogoComponent />
-                <div>
+                <div class="py-3 py-md-0">
                     <h5>
                         WiASSUR
                     </h5>
@@ -34,7 +38,7 @@
 
                 </div>
 
-                <div class="border-top pt-3 d-flex flex-column">
+                <div class="border-top w-100 pt-3 mb-5 mb-md-0 d-flex flex-column">
                     <span>Copyright © 2023</span>
                    
                         <router-link to="#" class="my-1" >Condition d'utilisation</router-link>
@@ -46,10 +50,10 @@
             </b-col>
             <b-col cols="6">
                 <b-row>
-                    <b-col class="my-2" cols="6" v-for="(item, index) in footerLinks" :key="index">
+                    <b-col xs="12" class="mb-4 my-md-2" md="6" v-for="(item, index) in footerLinks" :key="index">
                         <h5> {{ item.sectionTitle }}</h5>
                         <b-row>
-                            <b-col v-for="(link, index) in item.links" class="my-1" :cols="[item.links.length > 3 ? 6 : 12]"
+                            <b-col v-for="(link, index) in item.links" class="my-1" :md="[item.links.length > 3 ? 6 : 12]"
                                 :key="index">
                                 <router-link :to="link.href">{{ link.label }}</router-link>
                             </b-col>
@@ -59,7 +63,7 @@
             </b-col>
             <b-col>
                 <b-row class="h-100">
-                    <b-col cols="12" class="d-flex my-2 fs-6 flex-column">
+                    <b-col cols="12" class="d-flex my-2 fs-6 flex-column d-none d-md-flex">
                         
                             <InternalizationComponent onFooter/>
                        
