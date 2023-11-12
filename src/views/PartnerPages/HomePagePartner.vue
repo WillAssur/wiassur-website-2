@@ -17,7 +17,7 @@
                     </p>
                 </b-col>
                 <b-col cols="1"></b-col>
-                <b-col cols=""><img src="/images/booty-bg.svg" class="w-100 h-100" alt=""></b-col>
+                <b-col cols=""><img src="/images/other/booty-bg.svg" class="w-100 h-100" alt=""></b-col>
             </b-row>
         </b-container>
 
@@ -63,7 +63,7 @@
                     </b-col>
                     <b-col cols="2"></b-col>
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" style="width:100%" alt="">
+                        <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
 
@@ -73,7 +73,7 @@
                 <b-row class="mb-5">
 
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" style="width:100%" alt="">
+                        <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
                     <b-col cols="2"></b-col>
@@ -106,7 +106,7 @@
                     </b-col>
                     <b-col cols="2"></b-col>
                     <b-col cols="5">
-                        <img src="/images/empty-image.png" style="width:100%" alt="">
+                        <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
 
@@ -152,7 +152,7 @@ Nous vous permettons de combiner vos compétences avec les derniers outils de ve
                     </p>
 
                     <b-button class="mt-3" variant="primary">
-                        en savoir plus
+                        En savoir plus
                     </b-button>
 
 

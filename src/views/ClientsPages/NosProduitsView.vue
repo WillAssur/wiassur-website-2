@@ -5,7 +5,7 @@
   <b-row>
     <b-col class="mb-4" cols="12" md="6" lg="4" v-for="(item, index) in items" :key="index">
       <b-card style="min-height: 317px; height: 100%; width: 100%; padding: 10px; background: white; border: none; border-radius: 16px;">
-        <img :src="'public/images/Nos produits/' + item.icon" width="36" height="36" />
+        <img :src="item.icon" width="36" height="36" />
 
         <div class="d-flex flex-column align-items-start">
           <h5 class="fw-bold mt-3 mb-2 text-start">{{ item.title }}</h5>
@@ -52,27 +52,27 @@ export default defineComponent({
         {
           title: 'Automobile',
           description: 'Couvrez votre responsabilité civile du fait de l’utilisation de votre véhicule et aussi tous les autres dommages que pourrait subir votre véhicule.',
-          icon: 'automobile.svg',
+          icon: '/images/produits/automobile.svg',
         },
         {
           title: 'Assurance vie et prévoyance',
           description: 'Protégez vous contre tous les aléas de la vie liés à votre personne à titre particulier comme professionnel tels que le décès, ou l’invalidité afin d’assurer un avenir à vos proches.',
-          icon: 'assurance vie et prevoyance.svg',
+          icon: '/images/produits/assurance-vie-prevoyance.svg',
         },
         {
           title: 'Santé et accidents',
           description: 'Nous prenons en charge vos soins médicaux en cas d’accidents, de maladie et de grossesse à travers un réseau de partenaires médicaux étendu.',
-          icon: 'sante et accidents.svg',
+          icon: '/images/produits/sante-et-accidents.svg',
         },
         {
           title: 'Voyage',
           description: 'Voyagez sereinement grâce à une assistance en cas de maladies subites, et des désagréments (Pertes de bagages, retard de vol…) subis au cours de votre voyage.',
-          icon: 'Voyage.svg',
+          icon: '/images/produits/voyage.svg',
         },
         {
           title: 'Habitation',
           description: 'Votre maison est couverte contre les incendies et tous les dommages matériels. En plus, couvrez les conséquences pécuniaires de la responsabilité civile du fait des préjudices causés au tiers par les personnes, les animaux et les choses sous votre garde.',
-          icon: 'habitation.svg',
+          icon: '/images/produits/habitation.svg',
         },
       ],
       products: [

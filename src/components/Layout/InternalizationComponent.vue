@@ -2,11 +2,12 @@
 <!-- :label="dataselect.optionsPays.text + ' (' + dataselect.optionsPays.value + ')'" -->
 
 <template >
-  <SelectComponent :src="dataselect?.optionsPays?.prefix"
+  <SelectComponent :onFooter="onFooter" :src="dataselect?.optionsPays?.prefix"
     :label="dataselect?.optionsPays?.text + ' (' + dataselect?.optionsLangue?.value + ')'">
     <b-tabs content-class="mt-3" style="width: 230px;" class="custom-tabs" fill>
       <b-tab title="Pays" active>
         <div>
+         
           <CustomRadio @optionChildSelected="selectOptionsChildCountry" :options="optionsPays"
             :optionSelected="dataselect?.optionsPays?.value" />
           <b-button @click="selectPays" :disabled="paysSelected === dataselect?.optionsPays" class="w-100 mb-2 mt-3" variant="primary">Enregistrer</b-button>
@@ -31,8 +32,16 @@ export default {
   components: {
     CustomRadio, SelectComponent
   },
+
+  props:{
+    onFooter:{
+      type:Boolean,
+      default:false
+    }
+  },
   data() {
 
+    
 
 
     return {

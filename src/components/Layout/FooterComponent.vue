@@ -37,8 +37,8 @@
                 <div class="border-top pt-3 d-flex flex-column">
                     <span>Copyright © 2023</span>
                    
-                        <a href="#" class="my-1" >Condition d'utilisation</a>
-                        <a  href="#">Politique de confidentialité</a>
+                        <router-link to="#" class="my-1" >Condition d'utilisation</router-link>
+                        <router-link  to="#">Politique de confidentialité</router-link>
                         <!-- <LinkComponent className="no-space mt-1" link="#" title="Condition d'utilisation" />
                         <LinkComponent className="no-space mt-1" link="#" title="Politique de confidentialité" /> -->
                    
@@ -51,7 +51,7 @@
                         <b-row>
                             <b-col v-for="(link, index) in item.links" class="my-1" :cols="[item.links.length > 3 ? 6 : 12]"
                                 :key="index">
-                                <a :href="link.href">{{ link.label }}</a>
+                                <router-link :to="link.href">{{ link.label }}</router-link>
                             </b-col>
                         </b-row>
                     </b-col>
@@ -61,7 +61,7 @@
                 <b-row class="h-100">
                     <b-col cols="12" class="d-flex my-2 fs-6 flex-column">
                         
-                            <InternalizationComponent />
+                            <InternalizationComponent onFooter/>
                        
 
                     </b-col>

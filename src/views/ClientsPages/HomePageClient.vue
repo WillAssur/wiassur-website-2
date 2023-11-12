@@ -48,13 +48,13 @@
                     </b-col>
 
                     <b-col>
-                        <img src="/images/empty.png" alt="">
+                        <img src="/images/homepage/image1.svg" alt="">
                     </b-col>
                 </b-row>
 
                 <b-row class="mt-5">
                     <b-col>
-                        <img src="public/images/Home page Client/App_QR_code_v2.png" alt="">
+                        <img src="/images/homepage/image2.png" alt="">
                     </b-col>
 
                     <b-col cols="1">
@@ -106,7 +106,7 @@
                     </b-col>
 
                     <b-col>
-                        <img src="public/images/Home page Client/insurance.png" alt="">
+                        <img src="/images/homepage/image3.png" alt="">
                     </b-col>
                 </b-row>
             </b-container>
@@ -120,15 +120,15 @@
 
                 <div class=" d-flex align-items-center justify-content-around w-100 my-5">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="public/images/Home page Client/image 3.png" alt="">
+                        <img src="/images/homepage/whywia/icon1.svg" alt="">
                         <h3 class="mt-3">Simple</h3>
                     </div>
                     <div class="d-flex flex-column align-items-center">
-                        <img src="public/images/Home page Client/image 4.png" alt="">
+                        <img src="/images/homepage/whywia/icon2.svg" alt="">
                         <h3 class="mt-3">Digital</h3>
                     </div>
                     <div class="d-flex flex-column align-items-center">
-                        <img src="public/images/Home page Client/image 5.png" alt="">
+                        <img src="/images/homepage/whywia/icon3.svg" alt="">
                         <h3 class="mt-3">Efficace</h3>
                     </div>
                 </div>
@@ -187,7 +187,7 @@ export default defineComponent({
 .last-card {
     margin: 10px;
     width: 100%;
-    background: url('/images/need-help.png'), #FFB800 50% / cover no-repeat;
+    background: url('/images/other/need-help.png'), #FFB800 50% / cover no-repeat;
     background-blend-mode: multiply;
     padding: 60px;
     border-radius: 32px;
