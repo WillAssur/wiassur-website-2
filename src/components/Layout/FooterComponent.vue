@@ -4,8 +4,8 @@
             <InternalizationComponent onFooter/>
         </div>
      
-        <b-row class="justify-content-md-center">
-            <b-col class="d-flex flex-column align-items-start justify-content-between">
+        <b-row class=" d-flex flex-column justify-content-md-center">
+            <b-col xs="12" class="d-flex flex-column align-items-start justify-content-between">
                 <LogoComponent />
                 <div class="py-3 py-md-0">
                     <h5>
@@ -119,8 +119,15 @@ h5 {
 
 .footer {
     font-size: 13px;
-    padding: 060px 0px;
+    padding: 50px 0px;
 }
 
+
+@media only screen and (max-width: 500px) {
+    .footer{
+        padding: 48px 0px;
+}
+
+}
 
 </style>
