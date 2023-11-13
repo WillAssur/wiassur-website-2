@@ -1,14 +1,14 @@
 <template >
     <div class="page">
         <div class="container">
-            <b-row>
-                <b-col cols="4" class="d-flex align-items-start flex-column justify-content-center">
+            <b-row class="flex-column-reverse flex-md-row pb-5 pb-md-0">
+                <b-col md="4" class="d-flex align-items-start flex-column justify-content-center">
                     <h1>
                         L’assurance, <br>
                         Simple, Efficace
                     </h1>
                     <p class="my-5">
-                        Toutes les offres du marché, tous les assureurs. <br>
+                        Toutes les offres du marché, tous les assureurs. <br class="d-none d-md-inline">
                         Simple, digital, meilleur rapport qualité / prix. <br>
                         C’est l’expérience WiASSUR
                     </p>
@@ -23,8 +23,8 @@
         </div>
         <div class="bg-white section-2">
             <b-container>
-                <b-row>
-                    <b-col>
+                <b-row class="flex-column-reverse flex-md-row">
+                    <b-col xs="12" md="5">
                         <div class="d-flex align-items-start flex-column justify-content-center h-100 ">
                             <h2 class="fs-1 mb-3">
                                 L’assurance. Mais simple
@@ -43,27 +43,27 @@
 
                     </b-col>
 
-                    <b-col cols="1">
+                    <b-col xs="0" md="1">
 
                     </b-col>
 
-                    <b-col>
-                        <img src="/images/homepage/image1.svg" alt="">
+                    <b-col  class="mb-5 mb-md-0">
+                        <img class="w-100" src="/images/homepage/image1.svg" alt="">
                     </b-col>
                 </b-row>
 
                 <b-row class="mt-5">
-                    <b-col>
-                        <img src="/images/homepage/image2.png" alt="">
+                    <b-col class="mb-5 mb-md-0" >
+                        <img src="/images/homepage/image2.png" class="w-100" alt="">
                     </b-col>
 
-                    <b-col cols="1">
+                    <b-col xs="0" md="1">
 
                     </b-col>
 
 
 
-                    <b-col>
+                    <b-col xs="12" md="5">
                         <div class="d-flex align-items-start flex-column justify-content-center h-100 ">
                             <h2 class="fs-1 mb-3">
                                 Le bon conseil… <br>
@@ -83,8 +83,8 @@
                 </b-row>
 
 
-                <b-row class="mt-5">
-                    <b-col>
+                <b-row class="flex-column-reverse flex-md-row mt-5">
+                    <b-col xs="12" md="5">
                         <div class="d-flex align-items-start flex-column justify-content-center h-100 ">
                             <h2 class="fs-1 mb-3">
                                 Bienvenue dans votre monde… protégé.
@@ -101,12 +101,13 @@
 
                     </b-col>
 
-                    <b-col cols="1">
+
+                    <b-col xs="0" md="1">
 
                     </b-col>
 
-                    <b-col>
-                        <img src="/images/homepage/image3.png" alt="">
+                    <b-col class="mb-5 mb-md-0">
+                        <img class="w-100" src="/images/homepage/image3.png" alt="">
                     </b-col>
                 </b-row>
             </b-container>
@@ -114,28 +115,29 @@
 
         <b-container style="padding: 48px 12px;">
             <div class="d-flex align-items-center  flex-column">
-                <h2 class="fs-1">
+                <h2 class="fs-1 w-75 text-center w-md-100">
                     Pourquoi utiliser WiASSUR ?
                 </h2>
 
-                <div class=" d-flex align-items-center justify-content-around w-100 my-5">
-                    <div class="d-flex flex-column align-items-center">
+                <div class=" d-flex flex-column flex-md-row align-items-center justify-content-around w-100 my-5">
+                    <div class="mt-4 mt-md-0 d-flex flex-column align-items-center">
                         <img src="/images/homepage/whywia/icon1.svg" alt="">
                         <h3 class="mt-3">Simple</h3>
                     </div>
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="mt-4 mt-md-0 d-flex flex-column align-items-center">
                         <img src="/images/homepage/whywia/icon2.svg" alt="">
                         <h3 class="mt-3">Digital</h3>
                     </div>
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="mt-4 mt-md-0 d-flex flex-column align-items-center">
                         <img src="/images/homepage/whywia/icon3.svg" alt="">
                         <h3 class="mt-3">Efficace</h3>
                     </div>
                 </div>
 
-                <b-button variant="primary">En savoir plus</b-button>
+                <b-button class="w-100 d-md-none" variant="primary">En savoir plus</b-button>
+                <b-button class=" d-none d-md-block" variant="primary">En savoir plus</b-button>
 
-                <div class="last-card my-5 ">
+                <div class="last-card my-5 d-none d-md-block ">
                     <div class="d-flex justify-content-between ">
                         <div class="d-flex flex-column justify-content-center">
                             <h3 class="fs-1">
@@ -152,6 +154,21 @@
 
             </div>
         </b-container>
+
+
+        <div class="last-card d-md-none my-md-5 ">
+                    <div class=" ">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h3 class="fs-1">
+                                Besoin d’aide ? On est là
+                            </h3>
+                            <span class="fw-bold">Parlez à un conseiller</span>
+                            <span class="fw-bold">Vous pouvez poser toutes vos questions, sur tous nos canaux.</span>
+                        </div>
+
+                       
+                    </div>
+                </div>
 
 
 
@@ -192,5 +209,31 @@ export default defineComponent({
     padding: 60px;
     border-radius: 32px;
     position: relative;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .last-card {
+    margin: 0px;
+    width: 100%;
+    background: url('/images/other/need-help.png'), #FFB800 50% / cover no-repeat;
+    background-blend-mode: multiply;
+    padding: 50px 30px;
+    border-radius: 0px;
+    position: relative;
+} 
+
+.last-card h3 {
+    font-size: 39px !important;
+}
+
+.page {
+   
+
+    padding-bottom: 0px;
+
+}
 }
 </style>

@@ -1,6 +1,6 @@
 <template >
   
-        <b-nav-item :class="className" class="text-black" :to="link" :active="active">{{ title }} </b-nav-item>
+        <b-nav-item :class="className" class="text-black " :to="link" :active="active">{{ title }} </b-nav-item>
     
 </template>
 <script lang="ts">

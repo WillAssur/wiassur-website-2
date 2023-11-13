@@ -1,13 +1,14 @@
 <template >
     <div class="page">
         <b-container class="pb-2">
-            <b-row>
-                <b-col cols="6" class="d-flex flex-column align-items-start justify-content-center text-white">
-                    <h1>
+            <b-row class="flex-column-reverse flex-md-row pb-5 pb-md-0">
+                <b-col cols="12" sm="6"
+                    class="mt-5 mt-md-0 d-flex flex-column align-items-start justify-content-center text-white">
+                   <h1>
                         Ensemble. <br>Plus simple. <br>Plus efficace
                     </h1>
 
-                    <p class="w-75">
+                    <p class="">
                         Commençons la conversation sur la façon dont nous pouvons vous aider à améliorer la proposition de
                         valeur pour vos clients. Nous sommes flexibles, modulaires et évolutifs et offrons des solutions sur
                         mesure pour différents besoins d'assurance embarquée.
@@ -24,26 +25,26 @@
         <div class="bg-white">
             <b-container class="py-5">
                 <b-row>
-                    <b-col class="d-flex flex-column align-items-start">
+                    <b-col cols="12" sm="" class=" mb-4 d-flex flex-row flex-md-column align-items-center align-items-md-start">
                         <img src="/images/icon-filled.png" alt="">
 
-                        <h5 class="mt-3 mb-3 w-75">Un savoir faire
+                        <h5 class="mt-3 mb-3 w-75 ms-3 ms-md-0">Un savoir faire
                             éprouvé</h5>
 
 
                     </b-col>
-                    <b-col style="margin: 0 64px;" class="d-flex flex-column align-items-start">
+                    <b-col cols="12" sm="" class=" mb-4 d-flex flex-row flex-md-column align-items-center align-items-md-start">
                         <img src="/images/icon-filled.png" alt="">
 
-                        <h5 class="mt-3 mb-3 w-75">Plus de croissance et
+                        <h5 class="mt-3 mb-3 w-75 ms-3 ms-md-0">Plus de croissance et
                             de rentabilité</h5>
 
 
                     </b-col>
-                    <b-col class="d-flex flex-column align-items-start">
+                    <b-col cols="12" sm="" class=" mb-4 d-flex flex-row flex-md-column align-items-center align-items-md-start">
                         <img src="/images/icon-filled.png" alt="">
 
-                        <h5 class="mt-3 mb-3 w-75">Adapté à vos besoins
+                        <h5 class="mt-3 mb-3 w-75 ms-3 ms-md-0">Adapté à vos besoins
                             (et non l’inverse)</h5>
 
 

@@ -1,8 +1,8 @@
 <template >
     <div class="page">
         <b-container class="pb-2">
-            <b-row>
-                <b-col cols="6" class="d-flex flex-column align-items-start justify-content-center text-white">
+            <b-row class="flex-column-reverse flex-md-row pb-5 pb-md-0">
+                <b-col cols="12" sm="6" class="d-flex flex-column align-items-start justify-content-center text-white">
                     <h1>
                         Rejoignez-nous pour faire <br> de l’assurance simple et<br>efficace
                     </h1>
@@ -23,25 +23,72 @@
 
         <div class="bg-white py-5">
 
-            <b-container class="badge-special1 rounded-5 " style=" padding: 48px 64px;">
+            <b-container class="badge-special1 rounded-5 d-none d-md-block" style=" padding: 48px 64px;">
                 <div class="d-flex flex-column align-items-center">
                     <h3 class="text-center mb-5">C’est là que vous intervenez! <br>
                         Faites partie de l’histoire et mettez l’avenir de l’InsurTech à votre service.</h3>
                 </div>
 
 
-                <div class="d-flex align-items-center justify-content-center">
-  <b-badge class="ms-2 badge-special2" style="padding: 6px 12px; transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(276deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
-    <div style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">Plus de ventes</div>
-  </b-badge>
-  <b-badge class="ms-2 badge-special2" style="padding: 6px 12px; transform: rotate(-3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
-    <div style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">Plus d’efficacité</div>
-  </b-badge>
-  <b-badge class="ms-2 badge-special2" style="padding: 6px 12px; transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
-    <div style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">Plus d’innovation</div>
-  </b-badge>
-</div>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <b-badge class="ms-2 badge-special2  px-3 py-2"
+                        style=" transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(276deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+                        <div
+                            style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">
+                            Plus de ventes</div>
+                    </b-badge>
+                    <b-badge class="ms-2 badge-special2  px-3 py-2"
+                        style=" transform: rotate(-3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+                        <div
+                            style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">
+                            Plus d’efficacité</div>
+                    </b-badge>
+                    <b-badge class="ms-2 badge-special2  px-3 py-2"
+                        style=" transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+                        <div
+                            style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">
+                            Plus d’innovation</div>
+                    </b-badge>
+                </div>
 
+
+
+
+            </b-container>
+
+            <b-container>
+                <div class="badge-special1 rounded-5 d-md-none " style=" padding: 48px 16px 48px 16px;">
+                    <div class="d-flex flex-column align-items-center">
+                        <h3 class="text-center mb-5">C’est là que vous intervenez! <br>
+                            Faites partie de l’histoire et mettez l’avenir de l’InsurTech à votre service.</h3>
+                    </div>
+
+
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                        <b-badge class="mb-5 badge-special2 w-100  px-3 py-2"
+                            style=" transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(276deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+                            <div
+                                style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">
+                                Plus de ventes</div>
+                        </b-badge>
+                        <b-badge class="mb-3 badge-special2 w-100  px-3 py-2"
+                            style=" transform: rotate(-3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+                            <div
+                                style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">
+                                Plus d’efficacité</div>
+                        </b-badge>
+                        <b-badge class=" badge-special2 w-100  px-3 py-2"
+                            style=" transform: rotate(3deg); transform-origin: 0 0; background: linear-gradient(98deg, #61C0C7 7%, #FFB800 100%); border-radius: 100px; gap: 10px;">
+                            <div
+                                style="color: #F6EEF3; font-size: 20px; font-family: Avenir; font-weight: 800; line-height: 30px; word-wrap: break-word;">
+                                Plus d’innovation</div>
+                        </b-badge>
+                    </div>
+
+
+
+
+                </div>
             </b-container>
 
         </div>
@@ -49,20 +96,21 @@
         <div class="bg-white">
 
             <b-container class=" py-4">
-                <b-row class="mb-5">
-                    <b-col cols="5" class="d-flex flex-column justify-content-center">
+                <b-row class="mb-5 flex-column-reverse flex-md-row">
+                    <b-col cols="12" sm="5" class="d-flex flex-column justify-content-center">
                         <h2 class="mb-4">Devenez dès aujourd’hui
                             courtier partenaire</h2>
 
                         <p>
-                            Passionné par la vente et la relation client ? Nous le sommes aussi. <br>Nos politiques
+                            Passionné par la vente et la relation client ? Nous le sommes aussi. <br
+                                class="d-none d-md-inline">Nos politiques
                             personnalisées et innovantes, sans oublier nos processus entièrement numériques, vous aident à
                             développer vos ventes en un instant. Vous restez totalement indépendant mais avez accès à tous
                             les tarifs et tous les produits sur le marché.
                         </p>
                     </b-col>
-                    <b-col cols="2"></b-col>
-                    <b-col cols="5">
+                    <b-col cols="12" sm="2"></b-col>
+                    <b-col cols="12" sm="5" class="mb-4 mb-md-0">
                         <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
@@ -70,14 +118,14 @@
                 </b-row>
 
 
-                <b-row class="mb-5">
+                <b-row class="mb-5 flex-column flex-md-row">
 
-                    <b-col cols="5">
+                    <b-col class="mb-3 mb-md-0" cols="12" sm="5">
                         <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
                     <b-col cols="2"></b-col>
-                    <b-col cols="5" class="d-flex flex-column justify-content-center">
+                    <b-col cols="12" sm="5" class="d-flex flex-column justify-content-center">
                         <h2 class="mb-4">Commencez dès aujourd’hui en tant que conseiller WiASSUR</h2>
 
                         <p>
@@ -93,8 +141,8 @@
 
                 </b-row>
 
-                <b-row class="mb-5">
-                    <b-col cols="5" class="d-flex flex-column justify-content-center">
+                <b-row class="mb-5 flex-column-reverse flex-md-row">
+                    <b-col cols="12" sm="5" class="d-flex flex-column justify-content-center">
                         <h2 class="mb-4">De nouveaux revenus, une fidélisation client, ça vous parle ?</h2>
 
                         <p>
@@ -105,7 +153,7 @@
                         </p>
                     </b-col>
                     <b-col cols="2"></b-col>
-                    <b-col cols="5">
+                    <b-col cols="12" sm="5" class="mb-4 mb-md-0">
                         <img src="/images/other/empty-image.png" style="width:100%" alt="">
                     </b-col>
 
@@ -115,9 +163,9 @@
 
 
 
-                <div class="py-5 d-flex align-items-center justify-content-center">
+                <div class="py-5 d-flex flex-column flex-md-row align-items-center justify-content-center">
 
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column align-items-center mb-5 mb-md-0">
                         <img src="/images/icon-filled.png" alt="">
                         <span class="w-75 text-center mt-2 fw-bolder">
                             Dernières technologies
@@ -125,14 +173,14 @@
 
                     </div>
 
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column align-items-center mb-5 mb-md-0">
                         <img src="/images/icon-filled.png" alt="">
                         <span class="w-75 text-center mt-2 fw-bolder">
                             Une expertise collective
                         </span>
 
                     </div>
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column align-items-center mb-5 mb-md-0">
                         <img src="/images/icon-filled.png" alt="">
                         <span class="w-75 text-center mt-2 fw-bolder">
                             Des services convaincants
@@ -140,18 +188,40 @@
 
                     </div>
 
-                   
+
                 </div>
 
 
-                <div class="py-5 d-flex flex-column align-items-center">
+                <div class="py-5 d-none d-md-flex flex-column align-items-center">
 
                     <p class="text-center w-50">
                         Il n'y a rien de tel que WiASSUR. <br>
-Nous vous permettons de combiner vos compétences avec les derniers outils de vente, les services ainsi que les innovations technologiques.
+                        Nous vous permettons de combiner vos compétences avec les derniers outils de vente, les services
+                        ainsi que les innovations technologiques.
                     </p>
 
+
+
                     <b-button class="mt-3" variant="primary">
+                        En savoir plus
+                    </b-button>
+
+
+
+                </div>
+
+
+                <div class="py-5 d-flex d-md-none flex-column align-items-center">
+
+                    <p class="text-center w-100">
+                        Il n'y a rien de tel que WiASSUR. <br>
+                        Nous vous permettons de combiner vos compétences avec les derniers outils de vente, les services
+                        ainsi que les innovations technologiques.
+                    </p>
+
+
+
+                    <b-button class="mt-3 w-100" variant="primary">
                         En savoir plus
                     </b-button>
 
@@ -166,7 +236,7 @@ Nous vous permettons de combiner vos compétences avec les derniers outils de ve
 
         </div>
 
-      
+
 
     </div>
 </template>
@@ -181,4 +251,5 @@ export default {
     background: #61C0C7;
 
 
-}</style>
+}
+</style>

@@ -1,14 +1,14 @@
 <template >
     <div class="page">
-        <b-container class="pb-5">
-            <b-row>
-                <b-col cols="6" class="d-flex flex-column align-items-start justify-content-center text-white">
+        <b-container class="pb-md-5 pb-0 ">
+            <b-row class="flex-column-reverse flex-md-row pb-5 pb-md-0">
+                <b-col cols="12" sm="6" class="d-flex flex-column align-items-start justify-content-center text-white">
                     <h1 class="w-75">
                         Devenez un <br>
                         conseiller WiASSUR
                     </h1>
 
-                    <p class="w-75">
+                    <p class="w-100">
                         La sécurité est synonyme de liberté.
                         Avec WiASSUR, vous obtenez les deux.
                         Nous vous proposons une rémunération fixe,
@@ -18,7 +18,7 @@
                     <b-button variant="primary">Devenez conseiller maintenant</b-button>
                 </b-col>
                 <b-col cols="1"></b-col>
-                <b-col cols=""><img src="/images/partner-hero3.svg" class="w-100 h-100" alt=""></b-col>
+                <b-col class="mb-5 mb-md-0" cols=""><img src="/images/partner-hero3.svg" class="w-100 h-100" alt=""></b-col>
             </b-row>
         </b-container>
 
@@ -26,7 +26,7 @@
         <div class="bg-white">
             <b-container class="py-5">
                 <b-row>
-                    <b-col class="d-flex flex-column align-items-start">
+                    <b-col cols="12" sm="" class="d-flex mb-5 mb-md-0 flex-column align-items-start">
                         <img src="/images/icon-filled.png" alt="">
 
                         <h5 class="mt-3 mb-3">Des conditions optimales</h5>
@@ -36,7 +36,7 @@
                         </p>
 
                     </b-col>
-                    <b-col style="margin: 0 64px;" class="d-flex flex-column align-items-start">
+                    <b-col cols="12" sm="" class="d-flex mb-5 mb-md-0 flex-column align-items-start">
                         <img src="/images/icon-filled.png" alt="">
 
                         <h5 class="mt-3 mb-3">Une formule simple</h5>
@@ -46,7 +46,7 @@
                         </p>
 
                     </b-col>
-                    <b-col class="d-flex flex-column align-items-start">
+                    <b-col cols="12" sm="" class="d-flex mb-5 mb-md-0 flex-column align-items-start">
                         <img src="/images/icon-filled.png" alt="">
 
                         <h5 class="mt-3 mb-3">La transparence</h5>
@@ -57,24 +57,50 @@
                 </b-row>
             </b-container>
 
-            
-            <div class="d-flex flex-column align-items-center w-50 mx-auto " style="margin: 48px 0 ">
-                <h2 class="text-center">
-                    Faites partie du mouvement WiASSUR <br> dès maintenant
-                </h2>
 
-                <p class="text-center py-2">
-                    WiASSUR est un courtier indépendant. Nous vous donnons accès à tout le marché de l'assurance en vous
-                    associant à notre compétence technique et des outils de dernière génération.
-                    Aidez les clients à trouver la meilleure offre parmi toutes les options.
-                </p>
+            <b-container class="d-none d-md-block">
 
-                <p>
-                    Votre interlocuteur personnel se fera un plaisir de répondre à toutes vos questions.
-                </p>
+                <div class="d-flex flex-column align-items-center w-50 mx-auto " style="margin: 48px 0 ">
+                    <h2 class="text-center">
+                        Faites partie du mouvement WiASSUR <br> dès maintenant
+                    </h2>
 
-                <b-button class="my-3" variant="primary">Nous contacter</b-button>
-            </div>
+                    <p class="text-center py-2">
+                        WiASSUR est un courtier indépendant. Nous vous donnons accès à tout le marché de l'assurance en vous
+                        associant à notre compétence technique et des outils de dernière génération.
+                        Aidez les clients à trouver la meilleure offre parmi toutes les options.
+                    </p>
+
+                    <p>
+                        Votre interlocuteur personnel se fera un plaisir de répondre à toutes vos questions.
+                    </p>
+
+                    <b-button class="my-3" variant="primary">Nous contacter</b-button>
+                </div>
+            </b-container>
+
+
+            <b-container class="d-md-none ">
+
+                <div class="d-flex flex-column align-items-center  mx-auto " style="margin: 48px 0 ">
+                    <h2 class="text-center">
+                        Faites partie du mouvement WiASSUR <br> dès maintenant
+                    </h2>
+
+                    <p class="text-center py-2">
+                        WiASSUR est un courtier indépendant. Nous vous donnons accès à tout le marché de l'assurance en vous
+                        associant à notre compétence technique et des outils de dernière génération.
+                        Aidez les clients à trouver la meilleure offre parmi toutes les options.
+                    </p>
+
+                    <p class="text-center ">
+                        Votre interlocuteur personnel se fera un plaisir de répondre à toutes vos questions.
+                    </p>
+
+                    <b-button class="my-3 w-100" variant="primary">Nous contacter</b-button>
+                </div>
+            </b-container>
+
         </div>
     </div>
 </template>
@@ -90,4 +116,5 @@ export default defineComponent({
     background: #61C0C7;
 
 
-}</style>
+}
+</style>
