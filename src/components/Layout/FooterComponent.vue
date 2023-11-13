@@ -1,11 +1,11 @@
 <template >
     <b-container class="px-3  footer">
-        <div class="mb-5">
+        <div class="mb-5 d-md-none">
             <InternalizationComponent onFooter/>
         </div>
      
-        <b-row class=" d-flex flex-column justify-content-md-center">
-            <b-col xs="12" class="d-flex flex-column align-items-start justify-content-between">
+        <b-row class=" d-flex flex-column flex-md-row justify-content-md-center">
+            <b-col cols="12" sm="3" class="d-flex flex-column align-items-start justify-content-between">
                 <LogoComponent />
                 <div class="py-3 py-md-0">
                     <h5>

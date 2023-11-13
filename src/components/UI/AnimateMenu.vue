@@ -1,5 +1,5 @@
 <template >
-  <div class='body'>
+  <div class='body d-md-none'>
     <label class="label" for="check">
       <input type="checkbox" :checked="checked" id="check" />
       <span class=".span"></span>

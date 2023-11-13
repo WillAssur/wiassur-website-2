@@ -134,9 +134,10 @@
                     </div>
                 </div>
 
-                <b-button class="w-100 w-md-auto" variant="primary">En savoir plus</b-button>
+                <b-button class="w-100 d-md-none" variant="primary">En savoir plus</b-button>
+                <b-button class=" d-none d-md-block" variant="primary">En savoir plus</b-button>
 
-                <div class="last-card my-5 d-none d-block ">
+                <div class="last-card my-5 d-none d-md-block ">
                     <div class="d-flex justify-content-between ">
                         <div class="d-flex flex-column justify-content-center">
                             <h3 class="fs-1">
@@ -155,7 +156,7 @@
         </b-container>
 
 
-        <div class="last-card my-md-5 ">
+        <div class="last-card d-md-none my-md-5 ">
                     <div class=" ">
                         <div class="d-flex flex-column justify-content-center">
                             <h3 class="fs-1">

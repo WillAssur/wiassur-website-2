@@ -1,7 +1,7 @@
 <template >
     <div class="mt-5">
         <div class="image-container">
-            <img :src="image" :alt="name">
+            <img :src="image" class="w-100 h-100" style="object-fit: cover;" :alt="name">
         </div>
         <div class="mt-3">
             <h3 class="fs-5">{{ name }}</h3>
@@ -34,8 +34,22 @@ export default defineComponent({
 </script>
 <style >
 .image-container {
-    width: 340px;
+    /* width: 340px; */
     height: 320px;
     object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+@media only screen and (max-width: 500px) {
+
+.image-container {
+    width: 100%;
+}
+
+}
+
+
+
+
 </style>

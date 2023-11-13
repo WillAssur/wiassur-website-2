@@ -1,11 +1,11 @@
 <template >
-    <div class="bg-white p-5">
+    <div class="bg-white py-5 p-md-5">
         <b-container>
 
             <h2 class="mb-0 fs-1">Rencontrez notre équipe de direction</h2>
 
-            <b-row cols="4">
-                <b-col  v-for="(team, index) in teams" :key="index">
+            <b-row >
+                <b-col cols="12" sm="2" lg="3" class=""  v-for="(team, index) in teams" :key="index">
                     <MemberComponent :name="team.name" :role="team.role" :image="team.image" />
                 </b-col>
             </b-row>
